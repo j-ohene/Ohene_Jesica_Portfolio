@@ -11,7 +11,7 @@ Jesica Ohene's Portfolio
 
  ## Created with
  -HTMl, CSS, SASS and JavaScript
- -Mobile-fitst, tablet and desktop
+ -Mobile-first, tablet and desktop
  -CSS grid layout, amd basic javaScript animations 
  -includes slideshows of previous projects and upcoming projects
 
