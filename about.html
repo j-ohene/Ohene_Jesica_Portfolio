@@ -8,7 +8,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>       
+    <header>
         <img src="http://www.placeholder.co/100x100" alt="logo">
         <nav>
             <ul>
@@ -17,22 +17,30 @@
             </ul>
         </nav>
     </header>
-    <h1>About</h1>
-    <img src="http://www.placeholder.co/300x400" alt="portrait of Jesica">
-    <p>Jesica is a talented and driven front-end developer and designer with an ability to create captivating digital experiences. Equipped with an amazing eye for aesthetics and a solid technical background, she transforms ideas into visually appealing and innovative websites and applications. 
-        Consistently staying up-to-date with the latest trends in design and technological innovations, Jesica delivers projects that continue to outdo expectations and leave a lasting impression on clients.
-         </p>
+    <section class="grid-con">
+        <h1>About</h1>
+        <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3">
+        <img src="http://www.placeholder.co/300x400" alt="portrait of Jesica">
+    </div>
+    <div class="col-span-4 m-col-start-5 m-col-span-7 l-col-start-5 l-col-span-7 xl-col-start-5 xl-col-span-7">
+        <p>Jesica is a talented and driven front-end developer and designer with an ability to create captivating digital experiences. Equipped with an amazing eye for aesthetics and a solid technical background, she transforms ideas into visually appealing and innovative websites and applications. 
+            Consistently staying up-to-date with the latest trends in design and technological innovations, Jesica delivers projects that continue to outdo expectations and leave a lasting impression on clients.
+             </p>
+            </div>
+            </section>
+
     <script src="js/main.js"></script>
-  
+   <h3> This can be the start of something amazing.</h3>
+   <p> If you wish to get in touch please fill out the form or contact me at jesicaohene1@gmail.com </p>
+        <form class="form-inline" action="/action_page.php">
+            <label for="name"></label>
+            <input type="name" id="name" placeholder="Name" name="Name">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
+            <button type="submit">Sign Up </button>
+        </form> 
         <footer>
-            <form class="form-inline" action="/action_page.php">
-                <label for="name"></label>
-                <input type="name" id="name" placeholder="Name" name="Name">
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="Email" name="email">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
-                <button type="submit">Sign Up </button>
-            </form>
             <ul>
                 <li><a href="#">Linkedin</a></li>
                 <li><a href="#">GitHub</a></li>
@@ -41,7 +49,4 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
 
-    </footer>
-    &copy Jesica Ohene
-</body>
-</html>
+    </footer>  
