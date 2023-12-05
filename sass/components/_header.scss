@@ -1,0 +1,38 @@
+header{
+    background-color: $secondary-color;
+}
+
+li{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  float:left;
+   }
+  
+  
+   nav{
+    display:block;
+    padding: 0px;
+  
+  }
+  ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+  
+  
+  }
+  nav li a{
+    font-size: 22pt;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+  color: $accent-color;
+  padding-right: 30px;
+  
+  }
+   
+  nav a:hover{
+  scale: 120%
+  }
