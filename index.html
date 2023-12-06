@@ -6,28 +6,231 @@
     <title>Jesica Ohene</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="grid-con">
-        <div class="col-span-1 m-col-span-2 l-col-span-2 xl-col-span-2">
-        <img src="http://www.placeholder.co/100x100" alt="logo">
-    </div>
-        <nav class="l-col-start-3 l-col-span-9 xl-col-start-3 xl-col-span-9" >
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="grid-con">
+    <div class="mobile col-span-1 box">
+        <nav>
+            <div id="menuToggle">
+              <input type="checkbox" />
+         
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul class="mobile col-span-4 box" id="menu-mobile">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          </div>
+        <div class="tablet m-col-span-2 m-col-start-1 box">
+            <nav>
+                <div id="t-menuToggle">
+                  <input type="checkbox"/>
+             
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul class="tablet l-col-span-12 box" id="menu-tablet">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+              </div>
+
+            <div class="desktop l-col-span-3 box">
+              <img src="http://placeholder.co/100x100" alt="logo" class="logo" >
+            </div>
+            <div class="xldesktop xl-col-span-3 box">
+              <img src="http://placeholder.co/100x100" alt="logo" class="logo">
+            </div>
+<nav class= "desktop l-col-start-5 l-col-span-6 box" >
+    <ul>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+  <nav class="xldesktop xl-col-start-5 xl-col-span-6 box">
+<ul>
+  <li><a href="#">Projects</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class=" mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
+<img src="http://placeholder.co/100x100" alt="logo" class="logo">
+</div>
+<div class=" tablet m-col-start-5 m-col-span-3 box">
+<img src="http://placeholder.co/100x100" alt="alto logo" class="logo">
+</div>
+  </header>
     <section>
     <h1> Hello my name is Jesica</h1>
     <p> brief description of job and works</p>
     <a href="#"> A bit more about me</a>
 </section>
+<!--remember to cite in doc outline-->
+<!--https://www.codingnepalweb.com/responsive-image-slider-html-css-javascript/-->
 <section class="grid-con">
-    <div class="col-span-4 m-col-start-4 m-col-span-7 l-col-start-4 l-col-span-7 xl-col-start-4 xl-col-span-7">
- <img src=http://www.placeholder.co/1000x800 alt="slideshow images">
+  <div  class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box">
+    <div class="contain">
+<div class="wrapper">
+    <button id="prev-slide" class="slide-button material-symbols-rounded">
+      < </button>
+    <div class="carousel">
+        <div class="carousel_card" id="carousel_card-1">
+            <h2>hip hip cheerio</h2>
+            <p>hi ho lets go its off to work we go</p>
+
+            </div>
+            <div class="carousel_card" id="carousel_card-2">
+                <h2>Project 1</h2>
+                <p>
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    
+                    Where can I get some?
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    
+                    5
+                        paragraphs
+                        words
+                        bytes
+                        lists
+                        Start with 'Lorem
+                    ipsum dolor sit amet...'
+                    </p>
+
+                </div>
+                <div class="carousel_card" id="carousel_card-3">
+                    <h2>hip hip cheerio</h2>
+                    <p>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                        
+                        Where can I get some?
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                        
+                        5
+                            paragraphs
+                            words
+                            bytes
+                            lists
+                            Start with 'Lorem
+                        ipsum dolor sit amet...'
+                        </p>
+    
+                    </div>
+                    <div class="carousel_card" id="carousel_card-4">
+                        <h2>hip hip cheerio</h2>
+                        <p>
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                            
+                            Where can I get some?
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                            
+                            5
+                                paragraphs
+                                words
+                                bytes
+                                lists
+                                Start with 'Lorem
+                            ipsum dolor sit amet...'
+                            </p>
+                        </div>
+                        <div class="carousel_card" id="carousel_card-5">
+                            <h2>hip hip cheerio</h2>
+                            <p>
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                
+                                Where can I get some?
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                
+                                5
+                                    paragraphs
+                                    words
+                                    bytes
+                                    lists
+                                    Start with 'Lorem
+                                ipsum dolor sit amet...'
+                                </p>
+                            </div>
+                            <div class="carousel_card" id="carousel_card-6">
+                                <h2>hip hip cheerio</h2>
+                                <p>
+                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                    
+                                    Where can I get some?
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                    
+                                    5
+                                        paragraphs
+                                        words
+                                        bytes
+                                        lists
+                                        Start with 'Lorem
+                                    ipsum dolor sit amet...'
+                                    </p>
+                                </div>
+                                <div class="carousel_card" id="carousel_card-7">
+                                    <h2>hip hip cheerio</h2>
+                                    <p>
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                        
+                                        Where can I get some?
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                        
+                                        5
+                                            paragraphs
+                                            words
+                                            bytes
+                                            lists
+                                            Start with 'Lorem
+                                        ipsum dolor sit amet...'
+                                        </p>
+                                    </div>
+                                    <div class="carousel_card" id="carousel_card-8">
+                                        <h2>hip hip cheerio</h2>
+                                        <p>
+                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                                            
+                                            Where can I get some?
+                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                            
+                                            5
+                                                paragraphs
+                                                words
+                                                bytes
+                                                lists
+                                                Start with 'Lorem
+                                            ipsum dolor sit amet...'
+                                            </p>
+                                        </div>
+        </div>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+            >
+          </button>
+    </div>
+    </div>
+    </div>
+    <div class="col-span-2 col-start-2 m-col-span-3 m-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3 xl-col-start-6 box">
+    <div class="slider-scrollbar">
+    <div class="scrollbar-track">
+       <div class="scrollbar-thumb"></div>
+        </div>
+    </div>
+  
+    </div>
+</div>
+</section>
 </div>
  <div class="col-start-3 col-span-1 m-col-start-6 m-col-span-3 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3">
  <a href="#"> See more projects</a></div>
@@ -44,18 +247,18 @@
             <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
             <button type="submit">Sign Up </button>
         </form>
-        <footer>
-            <ul>
+        <footer class="grid-con">
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+            <ul class="footer-links">
                 <li><a href="#">Linkedin</a></li>
                 <li><a href="#">GitHub</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
-        </nav>
+            </div>
 
     </footer>
-    &copy Jesica Ohene
 </body>
 </html>
     &copy Jesica Ohene
