@@ -27,7 +27,6 @@ const initSlider = () => {
       // Remove event listeners on mouse up
       const handleMouseUp = () => {
           document.removeEventListener("mousemove", handleMouseMove);
-          document.removeEventListener("mouseup", handleMouseUp);
       }
 
       // Add event listeners for drag interaction
