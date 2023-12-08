@@ -1,6 +1,7 @@
 header{
     background-color: rgb(11, 2, 41);
-    
+    margin: 0;
+    padding: 0;
   }
 li{
     text-align: left;
@@ -18,7 +19,7 @@ li{
   ul{
     list-style-type: none;
     margin:0;
-    padding: 0;
+    padding-top: 10px;
   
   
   }
@@ -29,11 +30,30 @@ li{
   transition: 0.2s;
   padding-right: 40px;
   color: white;
-  font-size: 20pt;
-  
-  
+  font-size: 18pt;
   }
    
   nav a:hover{
   scale: 120%
+  }
+
+  .logo{
+    height: 100px;
+    max-width:200px;
+    margin:0px;
+    padding: 0px;
+  }
+
+.hero {
+    background: linear-gradient(90deg, #342fc7, #DDFFC9);
+    height: 800px;
+    display: block;
+  }
+  .hero img{
+    border-radius: 50%;
+    max-width: 300px;
+
+  }
+  body{
+    background-color: rgb(11, 2, 41);
   }
