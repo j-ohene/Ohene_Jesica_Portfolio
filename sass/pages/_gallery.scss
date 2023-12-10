@@ -32,3 +32,35 @@ border-radius: 5px;
 .gallery-header {
     color: #DDFFC9;
 }
+.motion-background{
+    background: #f392c9;
+    height: 140px;
+    padding-top: 10px;
+    display:block;
+}
+.motion-background h2{
+color: #EFE3EA;
+}
+
+.gallery .desktop img{
+display: inline-block
+max-width 600px;
+margin-bottom: 50px;
+}
+.gallery .xldesktop img{
+    display: inline-block
+    max-width 600px;
+    margin-bottom: 50px;
+    }
+.double-photo img {
+    max-width: 600px;
+}
+.graphic-background{
+    background: #9ce0a3;
+    height: 140px;
+    padding-top: 10px;
+    display:block;
+}
+.graphic-background h3{
+    color: #daf1dc;
+}
