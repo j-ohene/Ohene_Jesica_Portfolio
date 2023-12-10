@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header class="grid-con">
@@ -85,6 +86,25 @@
     <a href="#"> A bit more about me</a>
   </div>
 </section>
+<section  class="grid-con">
+  <h2 class="hidden">Video</h2>
+  <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full video box">
+    <video controls poster="images/placeholder.jpg">
+      <source src="video/video.mp4" type="video/mp4">
+      <p>Please use a newer browser that supports video</p>
+  </video>
+  <div class="video-controls hidden" id="video-controls"> 
+      <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
+      <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
+      <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
+      <i class="fa fa-volume-up"></i>
+      <!--to style volume tracker use a generator like https://range-input-css.netlify.app/-->
+      <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+      <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
+  </div>
+
+  </div>
+</section>
 
 <section class="grid-con cards">
   <div  class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box">
@@ -121,9 +141,9 @@
                   <h3 class="carousel-subtitle">Graphic Design</h3>
                   <h2 class="carousel-title">Elin Cosmetics</h2>
                   <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
+                  <img src="/img/magazinne-pic-moblie.jpg" alt="elin ad">
                   <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
                 </div>
-                <img src="/img/elin-logo.svg" alt="elin logo">
               </div>
             </div>
           </div>
@@ -140,7 +160,7 @@
                         <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
                         <a href="projects.html/#quatro" class="carousel-button">See more</a>
                       </div>
-                      <img src="img/hero-shop-desktop copy.png" alt="quatro shop hero">
+                      <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                     </div>
                     
                     <!-- motion -->
@@ -162,7 +182,7 @@
                         <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
                         <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
                       </div>
-                      <img src="/img/elin-logo.svg" alt="elin logo">
+                      <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
                     </div>
                   </div>
                 </div>
@@ -181,7 +201,7 @@
                                 <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
                                 <a href="projects.html/#quatro" class="carousel-button">See more</a>
                               </div>
-                              <img src="img/hero-shop-desktop copy.png" alt="quatro shop hero">
+                              <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                             </div>
                             
                             <!-- motion -->
@@ -203,7 +223,7 @@
                                 <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
                                 <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
                               </div>
-                              <img src="/img/elin-logo.svg" alt="elin logo">
+                              <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
                             </div>
                           </div>
                         </div>
@@ -220,7 +240,7 @@
                   <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
                   <a href="projects.html/#quatro" class="carousel-button">See more</a>
                 </div>
-                <img src="img/hero-shop-desktop copy.png" alt="quatro shop hero">
+                <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
               </div>
               
               <!-- motion -->
@@ -242,7 +262,7 @@
                   <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
                   <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
                 </div>
-                <img src="/img/elin-logo.svg" alt="elin logo">
+                <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
               </div>
             </div>
           </div>
@@ -255,16 +275,20 @@
  <a href="#"> See more projects</a></div>
 </section>
 <section class="grid-con">
-  <div class="col-span-4 m-col-start-3 m-col-span-8 l-col-start-3 l-col-span-8 xl-col-start-3 xl-col-span-8 box" >
-   <h3> This can be the start of something amazing.</h3>
-   <p> If you wish to get in touch please fill out the form below </p>
+  <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 form-intro box">
+  <h2>This can be the beginning of something amazing </h2>
+  <p>If you would like to get in touch please fiill out the form below </p>
+</div>
+</section>
+<section class="grid-con">
+  <div class="col-span-4 m-col-start-5 m-col-span-8 l-col-start-5 l-col-span-8 xl-col-start-5 xl-col-span-8 box form-con" >
         <form class="form-inline" action="/action_page.php">
             <label for="name"></label>
-            <input type="name" id="name" placeholder="Name" name="Name">
+            <input type="name" id="name" placeholder="Full Name" name="Name">
             <label for="email"></label>
-            <input type="email" id="email" placeholder="Email" name="email">
-            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
-            <button type="submit">Sign Up </button>
+            <input type="email" id="email" placeholder="Email Address" name="email">
+            <textarea id="message" name="Message" placeholder="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
+            <button  type="submit">Send </button>
           </div>
         </form>
       </section>

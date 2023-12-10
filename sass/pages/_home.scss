@@ -1,11 +1,19 @@
+.hidden{
+    display: none;
+}
 .hero {
     background: linear-gradient(90deg,#DDFFC9, #342fc7);
     max-height: 700px;
     display: block;
+
   }
   .hero img{
     border-radius: 50%;
     max-width: 300px;
+
+  }
+  .hero h1 p{
+    text-align: left;
 
   }
   body{
@@ -22,5 +30,10 @@ padding: 15px;
 .button:hover{
     scale:110%;
     transition: ease-in 0.2s;
+}
+.form-intro {
+    color:#b5c2d0;
+    text-align: left;
+    margin-left: 30px;
 }
 
