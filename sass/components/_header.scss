@@ -29,12 +29,13 @@ li{
   text-decoration: none;
   transition: 0.2s;
   padding-right: 40px;
-  color: white;
+  color: #9898FC;;
   font-size: 18pt;
   }
    
   nav a:hover{
-  scale: 120%
+  scale: 120%;
+  color:white;
   }
 
   .logo{
@@ -46,7 +47,7 @@ li{
 
 .hero {
     background: linear-gradient(90deg,#DDFFC9, #342fc7);
-    height: 800px;
+    max-height: 700px;
     display: block;
   }
   .hero img{

@@ -70,10 +70,17 @@ section .cards .carousel{
   color: #d27f94;
 }
 
-.motion{
-  background-color: #d27f94;;
+.fruit-icons svg {
+ max-width:60px;
+ display: inline-block;
 }
 
+.motion{
+  background-color: #d27f94;
+}
+.motion img{
+  padding-top:20px;
+}
 .graphic .carousel-button {
   background-color:white;
   color: #9ce0a3;
