@@ -1,0 +1,12 @@
+.gallery img{
+max-width: 780px;
+}
+
+.gallery img:hover{
+scale:110%;
+transition: ease-in 0.7s;
+}
+.mobile .gallery img{
+padding-bottom: 20px;
+border-radius: 5px;
+}
