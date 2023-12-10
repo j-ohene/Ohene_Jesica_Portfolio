@@ -59,7 +59,7 @@ volumeSlider.addEventListener("change", changeVolume);
             ease: "power1.inOut", 
           },
         },
-      });
+    
       
       // add animations and labels to the timeline
       tl.addLabel("start")
@@ -69,4 +69,13 @@ volumeSlider.addEventListener("change", changeVolume);
         .addLabel("spin")
         .to(".gear", { rotation: 360 })
         .addLabel("end");
-    })();
+
+        tl.from("#intro", gsap.to(target, {
+          duration:2.5,
+          ease: "power1.out",
+          y: -50
+        }));
+        }
+   
+   
+        })();
