@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header class="grid-con">
@@ -24,7 +25,7 @@
               <ul class="mobile col-span-4 box" id="menu-mobile">
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="gallery.html" target="_blank">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -48,10 +49,10 @@
               </div>
 
             <div class="desktop l-col-span-3 box">
-              <img src="http://placeholder.co/100x100" alt="logo" class="logo" >
+              <img src="img/logo-full.svg" alt="logo" class="logo" >
             </div>
             <div class="xldesktop xl-col-span-3 box">
-              <img src="http://placeholder.co/100x100" alt="logo" class="logo">
+              <img src="img/logo-full.svg" alt="logo" class="logo">
             </div>
 <nav class= "desktop l-col-start-5 l-col-span-6 box" >
     <ul>
@@ -67,186 +68,230 @@
   <li><a href="#">Contact</a></li>
 </ul>
 </nav>
-<div class=" mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
-<img src="http://placeholder.co/100x100" alt="logo" class="logo">
+<div class="mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
+<img src="img/logo-full.svg" alt="logo" class="logo">
 </div>
-<div class=" tablet m-col-start-5 m-col-span-3 box">
-<img src="http://placeholder.co/100x100" alt="alto logo" class="logo">
+<div class="tablet m-col-start-5 m-col-span-3 box">
+<img src="img/logo-full.svg" alt="alto logo" class="logo">
 </div>
   </header>
-    <section>
-    <h1> Hello my name is Jesica</h1>
-    <p> brief description of job and works</p>
+    <section class="grid-con hero">
+      <div class="col-start-1 col-span-4 m-col-start-1 m-col-span-7 l-col-start-1 l-col-span-7 xl-col-start-1 xl-col-span-7 box">
+    <h1> Hello my name is Jesica </h1>
+    <p> I am a front end developer with a background in art and design</p>
+  </div>
+  <div class ="col-span-4 m-col-span-4 m-col-start-8 l-col-span-4 l-col-start-8 xl-col-span-4 xl-col-start-8 box">
+    <img src="img/portrait.png"></div>
+<div class="col-start-2 col-span-1 m-col-start-5 m-col-span-3 l-col-start-5 l-col-span-3 xl-col-start-5 xl-col-span-3 button box" >
     <a href="#"> A bit more about me</a>
+  </div>
 </section>
-<!--remember to cite in doc outline-->
-<!--https://www.codingnepalweb.com/responsive-image-slider-html-css-javascript/-->
-<section class="grid-con">
+<section  class="grid-con">
+  <h2 class="hidden">Video</h2>
+  <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full video box">
+    <video controls poster="images/placeholder.jpg">
+      <source src="video/video.mp4" type="video/mp4">
+      <p>Please use a newer browser that supports video</p>
+  </video>
+  <div class="video-controls hidden" id="video-controls"> 
+      <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
+      <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
+      <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
+      <i class="fa fa-volume-up"></i>
+      <!--to style volume tracker use a generator like https://range-input-css.netlify.app/-->
+      <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+      <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
+  </div>
+
+  </div>
+</section>
+
+<section class="grid-con cards">
   <div  class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box">
-    <div class="contain">
-<div class="wrapper">
-    <button id="prev-slide" class="slide-button material-symbols-rounded">
-      < </button>
-    <div class="carousel">
-        <div class="carousel_card" id="carousel_card-1">
-            <h2>hip hip cheerio</h2>
-            <p>hi ho lets go its off to work we go</p>
-
-            </div>
-            <div class="carousel_card" id="carousel_card-2">
-                <h2>Project 1</h2>
-                <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                    
-                    5
-                        paragraphs
-                        words
-                        bytes
-                        lists
-                        Start with 'Lorem
-                    ipsum dolor sit amet...'
-                    </p>
-
+    <div>
+        <h2>What I do</h2>
+        <div>
+          <div class="mobile col-span-4 box">
+              <!--!Front end--->
+              <div class="carousel-item front-end">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Front end Development
+                  </h3>
+                  <h2 class="carousel-title">Quatro Website</h2>
+                  <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
+                  <img src="img/hero-shop-mobile.png" alt="quatro shop hero">
+                  <a href="projects.html/#quatro" class="carousel-button">See more</a>
                 </div>
-                <div class="carousel_card" id="carousel_card-3">
-                    <h2>hip hip cheerio</h2>
-                    <p>
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                        
-                        Where can I get some?
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                        
-                        5
-                            paragraphs
-                            words
-                            bytes
-                            lists
-                            Start with 'Lorem
-                        ipsum dolor sit amet...'
-                        </p>
-    
+              </div>
+              
+              <!-- motion -->
+              <div class="carousel-item motion">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Motion Design</h3>
+                  <h2 class="carousel-title">Introducing Alto earbuds</h2>
+                  <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
+                  <img src="img/altoearbuds.gif" alt="earbud gif">
+                  <a href="projects.html/#alto-animation" class="carousel-button">See more</a>
+                </div>
+              </div>
+              
+               <!-- Graphic -->
+               <div class="carousel-item graphic">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Graphic Design</h3>
+                  <h2 class="carousel-title">Elin Cosmetics</h2>
+                  <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
+                  <img src="/img/magazinne-pic-moblie.jpg" alt="elin ad">
+                  <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!--tablet-->
+                <div class="tablet m-col-span-12 box">
+                  <div class="carousel">
+                    <!--!Front end--->
+                    
+                    <div class="carousel-item front-end">
+                      <div class="carousel-content">
+                        <h3 class="carousel-subtitle">Front end Development
+                        </h3>
+                        <h2 class="carousel-title">Quatro Website</h2>
+                        <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
+                        <a href="projects.html/#quatro" class="carousel-button">See more</a>
+                      </div>
+                      <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                     </div>
-                    <div class="carousel_card" id="carousel_card-4">
-                        <h2>hip hip cheerio</h2>
-                        <p>
-                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    
+                    <!-- motion -->
+                    <div class="carousel-item motion">
+                      <div class="carousel-content">
+                        <h3 class="carousel-subtitle">Motion Design</h3>
+                        <h2 class="carousel-title">Introducing Alto earbuds</h2>
+                        <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
+                        <a href="projects.html/#alto-animation" class="carousel-button">See more</a>
+                      </div>
+                      <img src="img/altoearbuds.gif" alt="earbud gif">
+                    </div>
+                    
+                     <!-- Graphic -->
+                     <div class="carousel-item graphic">
+                      <div class="carousel-content">
+                        <h3 class="carousel-subtitle">Graphic Design</h3>
+                        <h2 class="carousel-title">Elin Cosmetics</h2>
+                        <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
+                        <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
+                      </div>
+                      <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
+                    </div>
+                  </div>
+                </div>
+
+                <!--desktop-->
+                
+                        <div class="desktop l-col-span-12 box">
+                          <div class="carousel">
+                            <!--!Front end--->
                             
-                            Where can I get some?
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                            
-                            5
-                                paragraphs
-                                words
-                                bytes
-                                lists
-                                Start with 'Lorem
-                            ipsum dolor sit amet...'
-                            </p>
-                        </div>
-                        <div class="carousel_card" id="carousel_card-5">
-                            <h2>hip hip cheerio</h2>
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                                
-                                Where can I get some?
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                
-                                5
-                                    paragraphs
-                                    words
-                                    bytes
-                                    lists
-                                    Start with 'Lorem
-                                ipsum dolor sit amet...'
-                                </p>
+                            <div class="carousel-item front-end">
+                              <div class="carousel-content">
+                                <h3 class="carousel-subtitle">Front end Development
+                                </h3>
+                                <h2 class="carousel-title">Quatro Website</h2>
+                                <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
+                                <a href="projects.html/#quatro" class="carousel-button">See more</a>
+                              </div>
+                              <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                             </div>
-                            <div class="carousel_card" id="carousel_card-6">
-                                <h2>hip hip cheerio</h2>
-                                <p>
-                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                                    
-                                    Where can I get some?
-                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                    
-                                    5
-                                        paragraphs
-                                        words
-                                        bytes
-                                        lists
-                                        Start with 'Lorem
-                                    ipsum dolor sit amet...'
-                                    </p>
-                                </div>
-                                <div class="carousel_card" id="carousel_card-7">
-                                    <h2>hip hip cheerio</h2>
-                                    <p>
-                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                                        
-                                        Where can I get some?
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        
-                                        5
-                                            paragraphs
-                                            words
-                                            bytes
-                                            lists
-                                            Start with 'Lorem
-                                        ipsum dolor sit amet...'
-                                        </p>
-                                    </div>
-                                    <div class="carousel_card" id="carousel_card-8">
-                                        <h2>hip hip cheerio</h2>
-                                        <p>
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                                            
-                                            Where can I get some?
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                            
-                                            5
-                                                paragraphs
-                                                words
-                                                bytes
-                                                lists
-                                                Start with 'Lorem
-                                            ipsum dolor sit amet...'
-                                            </p>
-                                        </div>
+                            
+                            <!-- motion -->
+                            <div class="carousel-item motion">
+                              <div class="carousel-content">
+                                <h3 class="carousel-subtitle">Motion Design</h3>
+                                <h2 class="carousel-title">Introducing Alto earbuds</h2>
+                                <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
+                                <a href="projects.html/#alto-animation" class="carousel-button">See more</a>
+                              </div>
+                              <img src="img/altoearbuds.gif" alt="earbud gif">
+                            </div>
+                            
+                             <!-- Graphic -->
+                             <div class="carousel-item graphic">
+                              <div class="carousel-content">
+                                <h3 class="carousel-subtitle">Graphic Design</h3>
+                                <h2 class="carousel-title">Elin Cosmetics</h2>
+                                <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
+                                <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
+                              </div>
+                              <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
+                            </div>
+                          </div>
+                        </div>
+                        <!--xldesktop-->
+          <div class="xldesktop xl-col-span-12 box">
+            <div class="carousel">
+              <!--!Front end--->
+              
+              <div class="carousel-item front-end">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Front end Development
+                  </h3>
+                  <h2 class="carousel-title">Quatro Website</h2>
+                  <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
+                  <a href="projects.html/#quatro" class="carousel-button">See more</a>
+                </div>
+                <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
+              </div>
+              
+              <!-- motion -->
+              <div class="carousel-item motion">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Motion Design</h3>
+                  <h2 class="carousel-title">Introducing Alto earbuds</h2>
+                  <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
+                  <a href="projects.html/#alto-animation" class="carousel-button">See more</a>
+                </div>
+                <img src="img/altoearbuds.gif" alt="earbud gif">
+              </div>
+              
+               <!-- Graphic -->
+               <div class="carousel-item graphic">
+                <div class="carousel-content">
+                  <h3 class="carousel-subtitle">Graphic Design</h3>
+                  <h2 class="carousel-title">Elin Cosmetics</h2>
+                  <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
+                  <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
+                </div>
+                <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
+              </div>
+            </div>
+          </div>
         </div>
-        <button id="next-slide" class="slide-button material-symbols-rounded">
-            >
-          </button>
-    </div>
-    </div>
-    </div>
-    <div class="col-span-2 col-start-2 m-col-span-3 m-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3 xl-col-start-6 box">
-    <div class="slider-scrollbar">
-    <div class="scrollbar-track">
-       <div class="scrollbar-thumb"></div>
-        </div>
-    </div>
-  
-    </div>
+      </div>
 </div>
 </section>
-</div>
- <div class="col-start-3 col-span-1 m-col-start-6 m-col-span-3 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3">
+<section class="grid-con">
+ <div class="button col-start-2 col-span-2 m-col-start-5 m-col-span-4 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-2 box">
  <a href="#"> See more projects</a></div>
 </section>
-
-    <script src="js/main.js"></script>
-   <h3> This can be the start of something amazing.</h3>
-   <p> If you wish to get in touch please fill out the form or contact me at jesicaohene1@gmail.com </p>
+<section class="grid-con">
+  <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 form-intro box">
+  <h2>This can be the beginning of something amazing </h2>
+  <p>If you would like to get in touch please fiill out the form below </p>
+</div>
+</section>
+<section class="grid-con">
+  <div class="col-span-4 m-col-start-5 m-col-span-8 l-col-start-5 l-col-span-8 xl-col-start-5 xl-col-span-8 box form-con" >
         <form class="form-inline" action="/action_page.php">
             <label for="name"></label>
-            <input type="name" id="name" placeholder="Name" name="Name">
+            <input type="name" id="name" placeholder="Full Name" name="Name">
             <label for="email"></label>
-            <input type="email" id="email" placeholder="Email" name="email">
-            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
-            <button type="submit">Sign Up </button>
+            <input type="email" id="email" placeholder="Email Address" name="email">
+            <textarea id="message" name="Message" placeholder="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
+            <button  type="submit">Send </button>
+          </div>
         </form>
+      </section>
         <footer class="grid-con">
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
             <ul class="footer-links">
@@ -257,7 +302,7 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
             </div>
-
+            <script src="js/main.js"></script>
     </footer>
 </body>
 </html>

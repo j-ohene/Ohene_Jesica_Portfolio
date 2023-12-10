@@ -1,0 +1,38 @@
+form{
+    background-color:#9898FC;
+    max-width:500px;
+}
+button {
+    background-color:#342fc7;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#DDFFC9 ;
+    margin-top: 50px;
+}
+
+form input{
+    padding-right: 40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 14pt;
+    margin-left: 0;
+    align-items: left;
+    margin-top:35px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color:#b5c2d0;
+}
+.form-inline{
+    height: 400px;
+    border-radius: 10px;
+}
+#message{
+    width: 290px;
+    margin-left: 68px;
+    margin-top:50px; 
+    font-family:'Roboto', sans-serif;
+    background-color:#b5c2d0;
+}
