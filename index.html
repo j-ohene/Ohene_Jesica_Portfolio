@@ -24,8 +24,8 @@
               
               <ul class="mobile col-span-4 box" id="menu-mobile">
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html" target="_blank">Contact</a></li>
+                <li><a href="gallery.html">About</a></li>
+                <li><a href="about.html" target="_blank">Gallery</a></li>
               </ul>
             </div>
           </nav>
@@ -41,8 +41,8 @@
                   
                   <ul class="tablet l-col-span-12 box" id="menu-tablet">
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="gallery.html">About</a></li>
+                    <li><a href="about.html" target="_blank">Gallery</a></li>
                   </ul>
                 </div>
               </nav>
@@ -56,16 +56,16 @@
             </div>
 <nav class= "desktop l-col-start-5 l-col-span-6 box" >
     <ul>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
     </nav>
   <nav class="xldesktop xl-col-start-5 xl-col-span-6 box">
 <ul>
-  <li><a href="#">Projects</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Contact</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="about.html">About</a></li>>
 </ul>
 </nav>
 <div class="mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
@@ -86,30 +86,30 @@
     <a href="#"> A bit more about me</a>
   </div>
 </section>
+
 <section  class="grid-con">
   <h2 class="hidden">Video</h2>
-  <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full video box">
-    <video controls poster="images/placeholder.jpg">
-      <source src="video/video.mp4" type="video/mp4">
-      <p>Please use a newer browser that supports video</p>
-  </video>
-  <div class="video-controls hidden" id="video-controls"> 
-      <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
-      <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
-      <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
-      <i class="fa fa-volume-up"></i>
-      <!--to style volume tracker use a generator like https://range-input-css.netlify.app/-->
-      <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-      <button id="full-screen"><i class="fa fa-arrows-alt"></i></button>
-  </div>
-
-  </div>
-</section>
+  <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box" id="player-container">
+      <video controls poster="img/video-thumbnail.png">
+          <source src="video/Ohene_JDemoReel.mp4" type="video/mp4">
+          <p>Please use a newer browser that supports Video</p>
+      </video>
+      <div class="video-controls hidden" id="video-controls"> 
+          <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
+          <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
+          <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
+          <i class="fa fa-volume-up"></i>
+          <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+          <button id="fulls-screen"><i class="fa fa-arrows-alt"></i></button>
+      </div>
+    </div>
+    </section>
 
 <section class="grid-con cards">
+  <h2 class="hidden">cards/carousel</h2>
   <div  class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box">
     <div>
-        <h2>What I do</h2>
+        <h2 class="heading">Highlights</h2>
         <div>
           <div class="mobile col-span-4 box">
               <!--!Front end--->
@@ -158,9 +158,9 @@
                         </h3>
                         <h2 class="carousel-title">Quatro Website</h2>
                         <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
+                        <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                         <a href="projects.html/#quatro" class="carousel-button">See more</a>
                       </div>
-                      <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
                     </div>
                     
                     <!-- motion -->
@@ -281,7 +281,7 @@
 </div>
 </section>
 <section class="grid-con">
-  <div class="col-span-4 m-col-start-5 m-col-span-8 l-col-start-5 l-col-span-8 xl-col-start-5 xl-col-span-8 box form-con" >
+  <div class="col-span-4 m-col-start-4 m-col-span-8 l-col-start-5 l-col-span-8 xl-col-start-5 xl-col-span-8 box form-con" >
         <form class="form-inline" action="/action_page.php">
             <label for="name"></label>
             <input type="name" id="name" placeholder="Full Name" name="Name">
@@ -297,7 +297,6 @@
             <ul class="footer-links">
                 <li><a href="#">Linkedin</a></li>
                 <li><a href="#">GitHub</a></li>
-                <li><a href="#">Instagram</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
