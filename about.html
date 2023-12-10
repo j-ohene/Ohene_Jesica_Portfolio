@@ -6,17 +6,75 @@
     <title>Jesica Ohene</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <img src="http://www.placeholder.co/100x100" alt="logo">
+  <header class="grid-con">
+    <div class="mobile col-span-1 box">
         <nav>
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
+            <div id="menuToggle">
+              <input type="checkbox" />
+         
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul class="mobile col-span-4 box" id="menu-mobile">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">About</a></li>
+                <li><a href="about.html" target="_blank">Gallery</a></li>
+              </ul>
+            </div>
+          </nav>
+          </div>
+        <div class="tablet m-col-span-2 m-col-start-1 box">
+            <nav>
+                <div id="t-menuToggle">
+                  <input type="checkbox"/>
+             
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul class="tablet l-col-span-12 box" id="menu-tablet">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">About</a></li>
+                    <li><a href="about.html" target="_blank">Gallery</a></li>
+                  </ul>
+                </div>
+              </nav>
+              </div>
+
+            <div class="desktop l-col-span-3 box">
+              <img src="img/logo-full.svg" alt="logo" class="logo" >
+            </div>
+            <div class="xldesktop xl-col-span-3 box">
+              <img src="img/logo-full.svg" alt="logo" class="logo">
+            </div>
+<nav class= "desktop l-col-start-5 l-col-span-6 box" >
+    <ul>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    </nav>
+  <nav class="xldesktop xl-col-start-5 xl-col-span-6 box">
+<ul>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="about.html">About</a></li>>
+</ul>
+</nav>
+<div class="mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
+<img src="img/logo-full.svg" alt="logo" class="logo">
+</div>
+<div class="tablet m-col-start-5 m-col-span-3 box">
+<img src="img/logo-full.svg" alt="alto logo" class="logo">
+</div>
+  </header>
     <section class="grid-con">
         <h1>About</h1>
         <div class="col-span-4 m-col-span-3 l-col-span-3 xl-col-span-3">
@@ -30,16 +88,6 @@
             </section>
 
     <script src="js/main.js"></script>
-   <h3> This can be the start of something amazing.</h3>
-   <p> If you wish to get in touch please fill out the form or contact me at jesicaohene1@gmail.com </p>
-        <form class="form-inline" action="/action_page.php">
-            <label for="name"></label>
-            <input type="name" id="name" placeholder="Name" name="Name">
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="Email" name="email">
-            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="400" required></textarea>
-            <button type="submit">Sign Up </button>
-        </form>
         <footer>
             <ul>
                 <li><a href="#">Linkedin</a></li>

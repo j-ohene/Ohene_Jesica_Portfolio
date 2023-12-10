@@ -24,8 +24,8 @@
               
               <ul class="mobile col-span-4 box" id="menu-mobile">
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html" target="_blank">Contact</a></li>
+                <li><a href="gallery.html">About</a></li>
+                <li><a href="about.html" target="_blank">Gallery</a></li>
               </ul>
             </div>
           </nav>
@@ -41,8 +41,8 @@
                   
                   <ul class="tablet l-col-span-12 box" id="menu-tablet">
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="gallery.html">About</a></li>
+                    <li><a href="about.html" target="_blank">Gallery</a></li>
                   </ul>
                 </div>
               </nav>
@@ -56,16 +56,16 @@
             </div>
 <nav class= "desktop l-col-start-5 l-col-span-6 box" >
     <ul>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
     </nav>
   <nav class="xldesktop xl-col-start-5 xl-col-span-6 box">
 <ul>
-  <li><a href="#">Projects</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Contact</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="about.html">About</a></li>>
 </ul>
 </nav>
 <div class="mobile col-start-3 col-span-2 m-col-start-5 m-col-span-3 box">
@@ -75,15 +75,20 @@
 <img src="img/logo-full.svg" alt="alto logo" class="logo">
 </div>
   </header>
-  <section grid-con gallery>
+  <section class="grid-con gallery">
     <div class="mobile col-span-full box">
+      <div class="front-end-background">
+       <div class="mobile col-span-full box">
     <h2> Front End Development</h2>
+    <img src="img/gear.svg" alt="gear" id="gear">
+  </div>
+      </div>
     <div class="gallery">
-        <h3>Quatro Refresh</h3>
-    <img src="img/quatro-home-mobile.jpg">
-    <img src="img/shop-page-mobile.jpg">
-    <img src="img/quatrotablet-aboutmobile.png">
-    <h3>Alto earbuds</h3>
+        <h3 class="gallery-header">Quatro Refresh</h3>
+    <img src="img/quatro-home-mobile.jpg" alt="homepage">
+    <img src="img/shop-page-mobile.jpg"alt="mobile">
+    <img src="img/quatrotablet-aboutmobile.png" alt="aboutpage">
+    <h3 class="gallery-header">Alto earbuds</h3>
     <img src="">
 </div>
 </div>
@@ -99,7 +104,8 @@
         <li><a href="#">Resume</a></li>
         <li><a href="#">Instagram</a></li>
     </ul>
-    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
 </footer>
 </body>
