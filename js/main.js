@@ -53,7 +53,7 @@ gsap.registerPlugin(scrollTrigger);
           trigger: ".front-end-background",
           pin: true, 
           start: "top top", 
-          end: "+=500", //
+          end: "+=250", //
           scrub: 1, // 
           snap: {
             snapTo: "labels", 
