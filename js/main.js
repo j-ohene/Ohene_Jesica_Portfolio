@@ -1,4 +1,5 @@
 
+(() => {
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
 const videoControls = document.querySelector("#video-controls");
@@ -43,7 +44,9 @@ playButton.addEventListener("click", playVideo);
 stopButton.addEventListener("click", stopVideo);
 pauseButton.addEventListener("click", pauseVideo);
 volumeSlider.addEventListener("change", changeVolume);
-(() => {
+
+gsap.registerPlugin(scrollTrigger);
+
     let tl = gsap.timeline({
         // yes, we can add it to an entire timeline!
         scrollTrigger: {
@@ -59,7 +62,7 @@ volumeSlider.addEventListener("change", changeVolume);
             ease: "power1.inOut", 
           },
         },
-    
+      });
       
       // add animations and labels to the timeline
       tl.addLabel("start")
@@ -67,15 +70,10 @@ volumeSlider.addEventListener("change", changeVolume);
         .addLabel("color")
         .from(".gear")
         .addLabel("spin")
-        .to(".gear", { rotation: 360 })
+        .to(".gear", { rotation: 800 })
         .addLabel("end");
-
-        tl.from("#intro", gsap.to(target, {
-          duration:2.5,
-          ease: "power1.out",
-          y: -50
-        }));
-        }
+      
+  
    
    
         })();

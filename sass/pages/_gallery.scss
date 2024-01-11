@@ -13,13 +13,19 @@ border-radius: 5px;
  .front-end-background{
     background:#EFAE82;
     color: #F8E8A5;
-    height: 140px;
+    height: 200px;
     padding-top: 10px;
     display:block;
 }
 .front-end-background h2{
     color: #F8E8A5;
-    font-size: 32pt;
+    font-size: 28pt;
+    position: relative;
+}
+.gear{
+padding-top:0px;
+margin-top:0px;
+width:40px;
 }
 
  .front-end-background img{
