@@ -13,29 +13,38 @@ border-radius: 5px;
  .front-end-background{
     background:#EFAE82;
     color: #F8E8A5;
-    height: 200px;
+    height:fit-content;
     padding-top: 10px;
     display:block;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .front-end-background h2{
     color: #F8E8A5;
     font-size: 28pt;
-    position: relative;
+    margin-top:0px;
+    margin-bottom: 0px;
 }
+
 .gear{
-padding-top:0px;
-margin-top:0px;
-width:40px;
-}
-
- .front-end-background img{
-    max-width: 30px;
     display:block;
-    margin-left: 5px;
- margin-bottom: 25px;
- display: block;
+}
+
+#gear1 {
+max-width:5%;
+padding-bottom: 0px;
+margin: 0px;
 
 }
+
+#gear2 {
+ max-width:5%;
+ padding-top: 0px;
+ margin-top: 0px;
+ margin-left:95%;
+
+}
+
 .gallery-header {
     color: #DDFFC9;
     font-size: 24pt;
