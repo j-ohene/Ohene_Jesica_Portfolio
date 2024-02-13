@@ -1,15 +1,30 @@
 .gallery img{
-max-width: 780px;
+max-width: 580px;
+display: block;
+padding: 10px;
+position: relative;
+border-radius: 15px;
 }
 
+.gallery {
+    display: inline-block;
+    flex-direction: row;
+
+    
+}
+.left-side {
+    display: block;
+    float: inline-start;
+    }
+.right-side {
+    display: block;
+    float: inline-end;
+    }
 .gallery img:hover{
 scale:110%;
 transition: ease-in 0.7s;
 }
-.mobile .gallery img{
-padding-bottom: 20px;
-border-radius: 5px;
-}
+
  .front-end-background{
     background:#EFAE82;
     color: #F8E8A5;
@@ -19,6 +34,7 @@ border-radius: 5px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
+    text-align: center;
 }
 .front-end-background h2{
     color: #F8E8A5;
@@ -49,6 +65,8 @@ margin: 0px;
 .gallery-header {
     color: #DDFFC9;
     font-size: 24pt;
+    display: block;
+    text-align:left;
 }
 .motion-background {
     background: #f392c9;
@@ -97,9 +115,7 @@ margin-bottom: 50px;
     max-width 600px;
     margin-bottom: 50px;
     }
-.double-photo img {
-    max-width: 600px;
-}
+
 .graphic-background{
     background: #9ce0a3;
     height: 140px;
@@ -109,4 +125,7 @@ margin-bottom: 50px;
 .graphic-background h2{
     color: #daf1dc;
     font-size: 32pt;
+}
+video{
+    max-width: 1000px;
 }
