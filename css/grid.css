@@ -2,7 +2,7 @@ html {
     box-sizing: border-box; 
     width: 100%;
     border:none;
-    padding: 5px;
+    padding: 0px;
   }
 
   *, *::before, *::after {
@@ -11,10 +11,10 @@ html {
   .box {
     color: rgb(27, 27, 27);
     border-radius: 0px;
-    padding: 20px, 0px;
+    padding: 0px, 0px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom:10px;
+    margin-top: 0px;
+    margin-bottom:0px;
   }
   /*mobile*/
   .fullwidth-grid-con {
@@ -24,7 +24,7 @@ html {
   .grid-con {
     display:grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-column-gap :30px;
+    grid-column-gap :10px;
     max-width:767px;
     margin:0px auto;
     padding-left: 0px;
