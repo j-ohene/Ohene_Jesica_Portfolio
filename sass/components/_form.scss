@@ -96,17 +96,14 @@ button {
 	margin-right: 10px;
 }
 
-#highlight {
-	color: rgb(255, 0, 191);
-}
 
 #contact-form #submit {
 	background-color: #342fc7;
 	color: #fff;
 	transition: ease .2s all;
-	max-width: 150px;
-	height: 60px; 
-	font-size: 22px;
+	max-width: 100px;
+	height: 40px; 
+	font-size: 12px;
 	border-radius: 50px;
 }
 
@@ -115,7 +112,7 @@ button {
 }
 
 #feedback {
-	background-color: rgba(255, 255, 255, 0.509);
+	background-color: rgba(190, 175, 255, 0.509);
 	padding: 20px;
 }
 

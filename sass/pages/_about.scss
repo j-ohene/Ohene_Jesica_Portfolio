@@ -4,7 +4,7 @@
 
 .about p{
     color: #b5c2d0;
-    font-size: 18pt;
+    font-size: 12pt;
     text-align: left;
 
 }
@@ -13,7 +13,20 @@
     color:#b5c2d0;
     text-align: center;
 }
-.collaborators{
-    color:#b5c2d0;
-    text-align: center;
+.about-me li {
+    color: #b5c2d0;
+    font-size: 12pt;
+    text-align: left;
+
+}
+.about-me h2{
+color: #b5c2d0;
+text-align: left;
+}
+.about-me h3{
+    color: #b5c2d0;
+    text-align: left;
+}
+#portrait img {
+    max-width:300px;
 }
