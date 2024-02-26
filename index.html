@@ -13,7 +13,7 @@
    
     <script defer type="module" src="js/main.js"></script>
 </head>
-<body>
+<body data-page="home">
   <header class="grid-con">
     <div class="mobile col-span-1 box">
         <nav>
@@ -91,7 +91,7 @@
 
 <section  class="grid-con">
   <h2 class="hidden">Video</h2>
-  <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box" id="player-container">
+  <div class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box" id="player-container">
       <video controls poster="img/video-thumbnail.png">
           <source src="video/Ohene_JDemoReel.mp4" type="video/mp4">
           <p>Please use a newer browser that supports Video</p>
@@ -110,7 +110,7 @@
 <section class="grid-con cards">
   <h2 class="hidden">cards/carousel</h2>
   <div  class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box">
-    <div>
+    
         <h2 class="heading">I like to dabble in a few things</h2>
         <div>
           <div class="mobile col-span-4 box">
@@ -124,6 +124,8 @@
                   <img src="img/hero-shop-mobile.png" alt="quatro shop hero">
                   <a href="gallery.html/#front-end" class="carousel-button">See more</a>
                 </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
               </div>
               
               <!-- motion -->
@@ -186,6 +188,8 @@
                       </div>
                       <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
                     </div>
+                    <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
                   </div>
                 </div>
 
@@ -193,7 +197,7 @@
                 
                         <div class="desktop l-col-span-12 box">
                           <div class="carousel">
-                            <!--!Front end--->
+                            <!--Front end-->
                             
                             <div class="carousel-item front-end">
                               <div class="carousel-content">
@@ -202,8 +206,10 @@
                                 <h2 class="carousel-title">Quatro Website</h2>
                                 <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
                                 <a href="gallery.html#front-end" class="carousel-button">See more</a>
-                              </div>
+                              
                               <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
+                            </div>
+                            
                             </div>
                             
                             <!-- motion -->
@@ -213,8 +219,9 @@
                                 <h2 class="carousel-title">Introducing Alto earbuds</h2>
                                 <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
                                 <a href="gallery.html#motion" class="carousel-button">See more</a>
-                              </div>
+                             
                               <img src="img/altoearbuds.gif" alt="earbud gif">
+                            </div>
                             </div>
                             
                              <!-- Graphic -->
@@ -224,9 +231,11 @@
                                 <h2 class="carousel-title">Elin Cosmetics</h2>
                                 <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
                                 <a href="gallery.html#graphic" class="carousel-button">View more</a>
-                              </div>
                               <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
                             </div>
+                            </div>
+                            <button class="prev-btn">&#10094; Previous</button>
+                            <button class="next-btn">Next &#10095;</button>
                           </div>
                         </div>
                         <!--xldesktop-->
@@ -240,9 +249,9 @@
                   </h3>
                   <h2 class="carousel-title">Quatro Website</h2>
                   <p class="carousel-paragraph">Tasked with the role of rebranding a now-defunct brand by designing and creating a dynamic webpage.</p>
-                  <a href="gallery.html#front-end" class="carousel-button">See more</a>
-                </div>
+                  <a class="carousel-button" href="gallery.html#front-end" >See more</a>
                 <img src="img/hero-shop-desktop.png" alt="quatro shop hero">
+              </div>
               </div>
               
               <!-- motion -->
@@ -252,8 +261,9 @@
                   <h2 class="carousel-title">Introducing Alto earbuds</h2>
                   <p class="carousel-paragraph">Wireless earbuds with a long battery life. Users can control how they listen to music without their device in their hands </p>
                   <a href="projects.html/#alto-animation" class="carousel-button">See more</a>
-                </div>
+                
                 <img src="img/altoearbuds.gif" alt="earbud gif">
+                </div>
               </div>
               
                <!-- Graphic -->
@@ -263,13 +273,14 @@
                   <h2 class="carousel-title">Elin Cosmetics</h2>
                   <p class="carousel-paragraph">Created the branding for a cosmetics brand</p>
                   <a href="projects.html/#elin-brand" class="carousel-button">View more</a>
-                </div>
+                
                 <img src="/img/magazinne-pic-copy.jpg" alt="elin ad">
+                </div>
               </div>
+              <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
             </div>
           </div>
-        </div>
-      </div>
 </div>
 </section>
 <section class="grid-con">
