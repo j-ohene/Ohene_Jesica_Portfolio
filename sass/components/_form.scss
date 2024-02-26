@@ -1,6 +1,7 @@
 form{
     background-color:#9898FC;
-    max-width:500px;
+    min-width:350px;
+   
 }
 button {
     background-color:#342fc7;
@@ -9,31 +10,145 @@ button {
     padding-top:5px;
     padding-bottom:5px;
     color:#DDFFC9 ;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
-form input{
-    padding-right: 40px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    font-size: 14pt;
-    margin-left: 0;
-    align-items: left;
-    margin-top:35px;
-    border-radius: 5px;
-    border-color: transparent;
-    background-color:#b5c2d0;
-}
+
 .form-inline{
     height: 400px;
     border-radius: 10px;
 }
 #message{
     width: 290px;
-    margin-left: 68px;
-    margin-top:50px; 
-    font-family:'Roboto', sans-serif;
-    background-color:#b5c2d0;
+    background-color:#ffffff;
     font-size: 14pt;
+    height: 150px;
+}
+
+
+
+#mainHeader {
+	height: 92px;
+	background-color: rgba(255,255,255,.83);
+}
+
+#logo {
+	max-width: 88px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#hero {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+
+#contact-form{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	background-color: #9898FC;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+#contact-form input:not([type="checkbox"]) {
+	display: block;
+	border: solid 1px #D5D5D5;
+	padding: 20px;
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+
+#contact-form label {
+	color: #434242;
+    text-align: left;
+  
+}
+
+#contact-form h3 {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+#contact-form p {
+	margin-bottom: 60px;
+	color: #888888;
+	line-height: 34px;
+	max-width: 430px;
+}
+
+#checkbox {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+#terms {
+	margin-right: 10px;
+}
+
+
+#contact-form #submit {
+	background-color: #342fc7;
+	color: #fff;
+	transition: ease .2s all;
+	max-width: 100px;
+	height: 40px; 
+	font-size: 12px;
+	border-radius: 50px;
+}
+
+#submit:hover {
+	background-color: #97be80;
+}
+
+#feedback {
+	background-color: rgba(190, 175, 255, 0.509);
+	padding: 20px;
+}
+
+#feedback p {
+	margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	#signUp {
+		display: flex;
+	}
+
+	#contact-form {
+		width: 500px;
+		margin-left: auto;
+		margin-right: 20px;
+		border-radius: 10px;
+		margin-top: 20px;
+		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+        align-items: center;
+	}
+
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    #contact-form {
+		width: 500px;
+		border-radius: 15px;
+		margin-top: 20px;
+		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+      font-size: 12pt;
+      align-items: center;
+
+	}
+
 }
