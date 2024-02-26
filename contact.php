@@ -42,7 +42,7 @@
         }
         echo json_encode(array("errors" => $errmsg));
     } else {
-        $querystring = "INSERT INTO contact_form(messenger_id,lname,fname,message,email) VALUES(NULL,'" . $lname . "','" . $fname . "','" . $email . "','" . $message . "')";
+        $querystring = "INSERT INTO contact_form(messenger_id,fname,lname,message,email) VALUES(NULL,'" . $lname . "','" . $fname . "','" . $email . "','" . $message . "')";
         $qpartner = mysqli_query($connection, $querystring);
         echo json_encode(array("message" => "Message recieved! I'll be sure to get back to you within the next business day!"));
     }

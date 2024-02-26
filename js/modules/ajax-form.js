@@ -3,7 +3,7 @@ export function ajaxForm (){
 const form = document.querySelector("#contact-form");
 const feedBack = document.querySelector("#feedback");
 
-function regForm(event) {
+function contactForm(event) {
 event.preventDefault();
 console.log("Form called");
 const thisform = event.currentTarget;
@@ -47,6 +47,6 @@ messageElement.textContent = "Whoops, it looks like you may be using an older br
 });
 }
 
-form.addEventListener("submit",regForm);
+form.addEventListener("submit",contactForm);
 
 };
