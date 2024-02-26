@@ -1,8 +1,8 @@
 export function cardSlider (){
 
-    const slider = document.querySelector('.carousel');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+    const slider = document.querySelector('#carousel-slider');
+    const prevBtn = document.querySelector('#prev-btn');
+    const nextBtn = document.querySelector('#next-btn');
     let slideWidth = slider.clientWidth;
     
     let currentIndex = 0;
