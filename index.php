@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  require_once('connect_remote.php');
+require_once('includes/connect.php');
 $stmt = $connection->prepare('SELECT * FROM projects ORDER BY title ASC');
 $stmt->execute();
-?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">

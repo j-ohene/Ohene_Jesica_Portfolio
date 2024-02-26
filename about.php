@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  require_once('connect.php');
+  require_once('includes/connect.php');
 $stmt = $connection->prepare('SELECT * FROM projects ORDER BY title ASC');
 $stmt->execute();
 ?>
