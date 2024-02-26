@@ -6,9 +6,6 @@
     <title>Jesica Ohene</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <script defer type="module" src="js/main.js"></script>
@@ -26,8 +23,7 @@
               
               <ul class="mobile col-span-4 box" id="menu-mobile">
                 <li><a href="gallery.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html" target="_blank">Gallery</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
               </ul>
             </div>
           </nav>
@@ -43,8 +39,7 @@
                   
                   <ul class="tablet m-col-span-12 box" id="menu-tablet">
                     <li><a href="gallery.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html" target="_blank">Gallery</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
                   </ul>
                 </div>
               </nav>
@@ -56,17 +51,15 @@
             <div class="xldesktop xl-col-span-3 box">
               <a href="index.html"><img src="img/logo-full.svg" alt="logo" class="logo"></a>
             </div>
-<nav class= "desktop l-col-start-5 l-col-span-6 box" >
+<nav class= "desktop l-col-start-9 l-col-span-4 box" >
     <ul>
       <li><a href="gallery.html">Projects</a></li>
-      <li><a href="projects.html">Gallery</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
     </nav>
-  <nav class="xldesktop xl-col-start-5 xl-col-span-6 box">
+  <nav class="xldesktop xl-col-start-9 xl-col-span-4 box">
 <ul>
   <li><a href="gallery.html">Projects</a></li>
-  <li><a href="projects.html">Gallery</a></li>
   <li><a href="about.html">About</a></li>
 </ul>
 </nav>
@@ -92,18 +85,26 @@
 <section  class="grid-con">
   <h2 class="hidden">Video</h2>
   <div class="col-span-4 m-col-span-10 m-col-start-2 l-col-span-10 l-col-start-2 xl-col-span-10 xl-col-start-2 box" id="player-container">
-      <video controls poster="img/video-thumbnail.png">
-          <source src="video/Ohene_JDemoReel.mp4" type="video/mp4">
-          <p>Please use a newer browser that supports Video</p>
-      </video>
-      <div class="video-controls hidden" id="video-controls"> 
-          <button id="play-button"><i class="fa fa-play-circle-o"></i></button>
-          <button id="pause-button"><i class="fa fa-pause-circle-o"></i></button>
-          <button id="stop-button"><i class="fa fa-stop-circle-o"></i></button>
-          <i class="fa fa-volume-up"></i>
-          <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-          <button id="fulls-screen"><i class="fa fa-arrows-alt"></i></button>
-      </div>
+    <video controls poster="img/video-thumbnail.png">
+      <source src="video/Ohene_JDemoReel.mp4" type="video/mp4">
+      <p>It seems you are using a browser that no longer supports video playback. Please use a different browser.</p>
+  </video>
+  <div class="video-controls hidden" id="video-controls">
+      <button id="play-button">
+          <i class="fa fa-play-circle-o"></i>
+      </button>
+      <button id="pause-button">
+          <i class="fa fa-pause-circle-o"></i>
+      </button>
+      <button id="stop-button">
+          <i class="fa fa-stop-circle-o"></i>
+      </button>
+      <i class="fa fa-volume-up"></i>
+      <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+      <button id="full-screen">
+          <i class="fa fa-arrows-alt"></i>
+      </button>
+    </div>
     </div>
     </section>
 
@@ -277,47 +278,38 @@
             </div>
           </div>
 </div>
-</section>
-<section class="grid-con">
+
+
  <div class="button col-start-2 col-span-2 m-col-start-5 m-col-span-4 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-2 box">
- <a href="#"> See more projects</a></div>
+ <a href="gallery.html"> See more projects</a></div>
 </section>
-<section class="grid-con">
+
+ <section class="grid-con">
   <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 form-intro box">
   <h2>This can be the beginning of something amazing </h2>
   <p>If you would like to get in touch please fill out the form below </p>
 </div>
-</section>
-<section class="grid-con">
-  <div class="col-span-4 m-col-start-4 m-col-span-8 l-col-start-5 l-col-span-8 xl-col-start-5 xl-col-span-8 box form-con" >
-    <form method="post" action="sendmail.php">
-
-      <label for="first_name">First Name: </label>
-      <input type="text" name="first_name" id="first_name">
-
-  
-      <label for="last_name">Last Name: </label>
-      <input type="text" name="last_name" id="last_name">
-  
-      <label for="email">Email: </label>
-      <input type="text" name="email" id="email">
-  
-  
-      <label for="comments">Comments: </label>
-      <textarea name="comments" id="comments">comment here</textarea>
-  
-  
-      <input type="submit" value="send">
-      <br><br>    <br><br>
-  </form>
-      </section>
+  <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box form-con" >
+			<form id="contact-form">
+				<label for="fname">First Name</label>
+				<input type="text" placeholder="First Name" id="fname">
+        <br>
+				<label for="lname">Last Name</label>
+				<input type="text" placeholder="Last Name" id="lname">
+        <br>
+				<label for="email">Email Address</label>
+				<input type="email" placeholder="example@email.com" id="email">
+        <br>
+        <input type="text" placeholder="Type your message" id="message">
+				<input id="submit" type="submit" value="Send">
+				<section id="feedback"><p>Please fill out all sections</p></section>
+			</form>
+			</section>	
         <footer class="grid-con">
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
             <ul class="footer-links">
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/jesica-ohene-3770b6243/">Linkedin</a></li>
+                <li><a href="https://github.com/j-ohene">GitHub</a></li>
             </ul>
             </div>
             

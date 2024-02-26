@@ -4,40 +4,65 @@ const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
 const videoControls = document.querySelector("#video-controls");
 const playButton = document.querySelector("#play-button");
-const pauseButton = document.querySelector ("#pause-button");
-const stopButton = document.querySelector ("#stop-button");
+const pauseButton = document.querySelector("#pause-button");
+const stopButton = document.querySelector("#stop-button");
 const volumeSlider = document.querySelector("#change-vol");
-const fullScreen = document.querySelector ("#full-screen");
-//functions//
-player.controls = false;
-//JS loaded, now lets hide the default controls  
+const fullScreen = document.querySelector("#full-screen");
+
+// functions
+
 player.controls = false;
 videoControls.classList.remove('hidden');
 
 function playVideo() {
-  player.play();
+    player.play();
 }
-function pauseVideo(){
-player.pause();
+
+function pauseVideo() {
+    player.pause();
 }
-function stopVideo(){
+
+function stopVideo() {
     player.pause();
     player.currentTime = 1;
-    //current time is associated with seconds so it would pause then go to the first second//
-}
-function changeVolume(){
+} 
+
+function changeVolume() {
     player.volume = volumeSlider.value;
-  console.log(volumeSlider.value);
+    console.log(volumeSlider.value);
 }
-//event listeners//
+function toggleFullScreen() {
+    if(document.fullscreenElement) {
+        document.exitFullscreen();
+    } else if (document.webkitFullscreenElement){
+        document.webkitExitFullscreen();
+    } else if (playerCon.webkitRequestFullscreen){
+            playerCon.webkitRequestFullscreen();
+        } else {
+            playerCon.requestFullscreen();
+        }
+    }
 
+function hideControls () {
+    if(player.paused) {
+        return;
+    }
+    videoControls.classList.add('hide');
+}
+function showControls() {
+    videoControls.classList.remove('hide');
+}
 
+// Event Listeners
 
-//to find events 
-
-//event listeners//
 playButton.addEventListener("click", playVideo);
-stopButton.addEventListener("click", stopVideo);
 pauseButton.addEventListener("click", pauseVideo);
+stopButton.addEventListener("click", stopVideo);
 volumeSlider.addEventListener("change", changeVolume);
+
+fullScreen.addEventListener("click", toggleFullScreen);
+videoControls.addEventListener("mouseenter",showControls);
+videoControls.addEventListener("mouseleave",hideControls);
+player.addEventListener("mouseenter",showControls);
+player.addEventListener("mouseleave",hideControls);
 };
