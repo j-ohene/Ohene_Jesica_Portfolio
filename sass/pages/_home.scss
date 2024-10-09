@@ -2,28 +2,36 @@
     display: none;
 }
 .hero {
-    background: linear-gradient(90deg,#DDFFC9, #342fc7);
-    max-height: 700px;
+    //background-image: url(/img/hero.jpg);
+    height: 700px;
     display: block;
-
+    margin-top: -58px;
+    background-image: url(/img/gradient.svg);
+    background-size:cover;
+    
   }
-  .hero img{
-    border-radius: 50%;
-    max-width: 300px;
-
+  @media screen and (max-width: 768px) {
+    .hero{
+    background-image: url(/img/hero-mobile.jpg);
+    height: 500px;
+    display: block;
+    margin-top: -40px;
+    }
   }
   .hero h1 p{
     text-align: left;
 
   }
   body{
-    background-color: rgb(62, 47, 108);
+    background-color: #F9F4F0;
+    margin: 0px;
+    padding: 0px;
   }
 
 .button a {
 text-decoration: none;
-color:#DDFFC9 ;
-background-color:#342fc7 ;
+color:#F9F4F0;
+background-color:#744B60 ;
 border-radius: 25px;
 padding: 15px;
 
@@ -37,7 +45,7 @@ padding: 15px;
     transition: ease-in 0.2s;
 }
 .form-intro {
-    color:#b5c2d0;
+    color:#F9F4F0;
     text-align: left;
     margin-left: 30px;
 }

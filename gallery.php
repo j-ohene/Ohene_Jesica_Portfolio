@@ -83,6 +83,9 @@ $stmt->execute();
   <a href="index.html"><img src="img/logo-full.svg" alt="logo" class="logo"></a>
 </div>
   </header>
+  <?php
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+      ?>
   <section class="grid-con">
     <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box">
       <div class="front-end-background" id="front-end">
@@ -91,185 +94,164 @@ $stmt->execute();
         <img src="img/gear.svg" alt="gear" class="gear" id="gear2">
       </div>
         </div>
-       
-    
-  <section class="grid-con">
-    <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box">
-      <div class="front-end-background">
-        <img src="img/gear.svg" alt="gear" class="gear" id="gear1">
-        <h2> Front End Development</h2>
-        <img src="img/gear.svg" alt="gear" class="gear" id="gear2">
-      </div>
-        </div>
-        
+
         <div class="mobile col-span-full box">
-        <?php
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo'<div class="gallery">
-                <div class="textcont">
-                    <img src="img/'.$row['image'] . '" alt="quatro homepage">
-                    <h3 class="thumb-text">' . $row['title'] . '</h3>
-                    <a href="project_detail.php?id=' . $row['id'] . '">' .$row['title'].'</a>
-                </div>
-                <div class="textcont">
-                    <img src="img/' . $row['image'] . '" alt="alto homepage">
-                    <h3 class="thumb-text">' . $row['title'] . '</h3>
-                    <a href="project_detail.php?id=' . $row['id'] .'">'.$row['title'].'</a>
-                </div>
-        
-    </div>';
-    }
-      ?>
-</div>
-<div class="tablet m-col-span-full box">
-<?php echo '<div class="gallery"> 
-             <div class="textcont">
-                    <img src="img/'.$row['image'] . '" alt="quatro homepage">
-                    <h3 class="thumb-text">'.$row['title'].'</h3>
-                    <a href="project_detail.php?id='.$row['id'] .'">'.$row['title'].'</a>
-                </div>
-                <div class="textcont">
-                    <img src="img/' . $row['image'] . '" alt="alto homepage">
-                    <h3 class="thumb-text">' . $row['title'] . '</h3>
-                    <a href="project_detail.php?id='. $row['id'] .'">'.$row['title'].'</a>
-                </div>
-    </div>'
-    ?>
-</div>
-
-<div class="desktop l-col-span-full box">
-   <?php echo'<div class="gallery">
-        <div class="l-col-span-6 left-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="quatro homepage">
-            </a>
-            <p>'.$row['description'].'</p>
+           <div class="gallery">
+           <div class="textcont">
+            <?php
+           echo '<img src="img/'.$row['image']'" alt="quatro homepage">'
+              echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+            echo '<div class="textcont">'
+            echo '<img src="img/'.$row['image']'" alt="alto earbuds thumbnail">'
+            echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+      </div>
+      </div>
+      <div class="tablet m-col-span-full box">
+      
+      <div class="gallery">
+        <div class="textcont">
+           echo '<img src="img/'.$row['image']'" alt="quatro homepage">'
+              echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+            <div class="textcont">
+            echo '<img src="img/'.$row['image']'" alt="alto earbuds thumbnail">'
+            echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+    </div>
+    <div class="textcont">
+    echo '<img src="img/'.$row['image']'" alt="music mixer">'
+    echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+    </div>
+    <div class="textcont">
+    echo '<img src="img/'.$row['image']'" alt="SWAPI Movie Lookup">'
+    echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+    </div>
+      </div>
+      </div>
+      
+      <div class="desktop l-col-span-full box">
+        <div class="gallery">
+      <div class= "l-col-span-6 left-side box">
+        <div class="textcont">
+        echo '<img src="img/'.$row['image']'" alt="quatro homepage">'
+        echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
         </div>
-        <div class="l-col-start-6 l-col-span-6 xl-col-start-6 right-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto earbuds">
-            </a>
-            <p>'.$row['description'].'</p>
+        <div class="textcont">
+        echo '<img src="img/'.$row['image']'" alt="music mixer">'
+    echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+      </div>
+      </div>
+        <div class="l-col-start-6 l-col-span-6 right-side box ">
+          <div class="textcont">
+          echo '<img src="img/'.$row['image']'" alt="alto earbuds thumbnail">'
+          echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+          </div>
+          <div class="textcont">
+          echo '<img src="img/'.$row['image']'" alt="SWAPI Movie Lookup">'
+          echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+          </div>
         </div>
-    </div>'
-    ?>
-</div>
-
-<div class="xldesktop xl-col-span-full box">
-    <?php echo'<div class="gallery">
-        <div class="xl-col-span-6 left-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="quatro homepage">
-            </a>
-            <p>'.$row['description'].'</p>
+      </div>
+      </div>
+      
+      <div class="xldesktop xl-col-span-full box">
+        <div class="gallery">
+      <div class= "xl-col-span-6 left-side box">
+        <div class="textcont">
+        echo '<img src="img/'.$row['image']'" alt="quatro homepage">'
+        echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
         </div>
-        <div class="xl-col-start-6 xl-col-span-6 right-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto earbuds">
-            </a>
-            <p>'.$row['description'].'</p>
+        <div class="textcont">
+        echo '<img src="img/'.$row['image']'" alt="music mixer">'
+    echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+      </div>
+      </div>
+        <div class="xl-col-start-6 xl-col-span-6 right-side box ">
+          <div class="textcont">
+          echo '<img src="img/'.$row['image']'" alt="alto earbuds thumbnail">'
+          echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+          </div>
+          <div class="textcont">
+          echo '<img src="img/'.$row['image']'" alt="SWAPI Movie Lookup">'
+          echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+          </div>
         </div>
-    </div>'
-    ?>
-</div>
-
+      </div>
+      </div>
 <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box">
-    <div class="motion-background">
-        <img src="img/clapper.svg" alt="clapper" class="clapper" id="clapper1">
-        <h2>Motion Design</h2>
-        <img src="img/clapper.svg" alt="clapper" class="clapper" id="clapper2">
-    </div>
-</div>
 
-<div class="mobile col-span-full box">
-    <?php echo'<div class="gallery">
-        <h3>'.$row['title'].'</h3>
-        <a href="project_detail.php?id='.$row['id'].'">
-            <img src="img/'.$row['image'].'"  alt="alto animation">
-        </a>
-        <p>'.$row['description'].'</p>
-    </div>'
-    ?>
-</div>
+ 
+          <div class="mobile col-span-full box">
+            <div class="gallery">
+              <div class="textcont">
+              echo '<img src="img/'.$row['image']'" alt="Health Canada mini ad campaign (print)">'
+              echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+            <div class="textcont">
+            echo '<img src="img/'.$row['image']'" alt="elin cosmetics print ad">'
+            echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+          </div>
+          </div>
+          </div>
+          
+          <div class="tablet m-col-span-full box">
 
-<div class="tablet m-col-span-full box">
-  <?php  echo'<div class="gallery">
-        <h3>'.$row['title'].'</h3>
-        <a href="project_detail.php?id='.$row['id'].'">
-            <img src="img/'.$row['image'].'"  alt="quatro homepage">
-        </a>
-        <p>'.$row['description'].'</p>
-    </div>'
-    ?>
-</div>
+            <div class="gallery">
+              <div class="textcont">
+              echo '<img src="img/'.$row['image']'" alt="Health Canada mini ad Campaign (print) ">'
+              echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+            <div class="textcont">
+            echo '<img src="img/'.$row['image']'" alt="elin cosmetics print ad">'
+            echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+            </div>
+          
+            </div>
+            </div>
 
-<div class="desktop l-col-span-full box">
-   <?php echo'<div class="gallery">
-        <div class="l-col-span-6 left-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto animation">
-            </a>
-            <p>'.$row['description'].'</p>
-        </div>
-        <div class="l-col-start-6 l-col-span-6 xl-col-start-6 right-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto animation">
-            </a>
-            <p>'.$row['description'].'</p>
-        </div>'
-        ?>
-    </div>
+            <div class="desktop l-col-span-full box">
+              <div class="gallery">
+              <div class= "l-col-span-6 left-side box">
+                <div class="textcont">
+                echo '<img src="img/'.$row['image']'" alt="Health Canada mini ad Campaign (print) ">'
+                echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+              </div>
+              </div>
+              <div class="l-col-start-6 l-col-span-6 right-side box">
+                <div class="textcont">
+                echo '<img src="img/'.$row['image']'" alt="elin cosmetics print ad">'
+            echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+              </div>
+              </div>
+              
+              </div>
+              </div>
 
-</div>
+              <div class="xldesktop xl-col-span-full box">
+                <div class="gallery">
+                <div class= "xl-col-span-6 left-side box">
+                  <div class="textcont">
+                  echo '<img src="img/'.$row['image']'" alt="Health Canada mini ad Campaign (print) ">'
+                  echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+                </div>
+                </div>
+                <div class="xl-col-start-6 xl-col-span-6 right-side box">
+                  <div class="textcont">
+                  echo '<img src="img/'.$row['image']'" alt="elin cosmetics print ad">'
+              echo'<h3 class="thumb-text"'.$row['title']'.</h3>'
+                </div>
+                </div>
+                
+                </div>
+                </div>
 
-<div class="xldesktop xl-col-span-full box">
-   <?php echo'<div class="gallery">
-        <div class="xl-col-span-6 left-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto animation">
-            </a>
-            <p>'.$row['description'].'</p>
-        </div>
-        <div class="xl-col-start-6 xl-col-span-6 right-side box">
-            <h3>'.$row['title'].'</h3>
-            <a href="project_detail.php?id='.$row['id'].'">
-                <img src="img/'.$row['image'].'"  alt="alto animation">
-            </a>
-            <p>'.$row['description'].'</p>
-        </div>
-    </div>'
-    ?>
-</div>
-
-<div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box">
-    <div class="graphic-background">
-        <h2>Graphic Design</h2>
-    </div>
-</div>
-
-echo <?php'<div class="gallery">
-    <h3>'.$row['title'].'</h3>
-    <a href="project_detail.php?id='.$row['id'].'">
-        <img src="img/'.$row['image'].'"  alt="elin promo">
-    </a>
-    <p>'.$row['description'].'</p>
-</div>;'
-
-    
-$stmt = null;
-    
-?>
 </section>
 
-
-<footer class="grid-con">
+    }
+    $stmt = null;
+    ?>
+    <footer class="grid-con">
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
             <ul class="footer-links">
                 <li><a href="https://www.linkedin.com/in/jesica-ohene-3770b6243/">Linkedin</a></li>
@@ -277,6 +259,7 @@ $stmt = null;
             </ul>
             </div>
     </footer>
+
+&copy Jesica Ohene
 </body>
 </html>
-    &copy Jesica Ohene

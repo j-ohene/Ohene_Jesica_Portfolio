@@ -1,4 +1,5 @@
-export function videoPlayer(){
+/*export function videoPlayer() {
+
 
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
@@ -9,8 +10,8 @@ const stopButton = document.querySelector("#stop-button");
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
-// functions
 
+//if JS is loaded, super. Remove the default controls
 player.controls = false;
 videoControls.classList.remove('hidden');
 
@@ -65,4 +66,5 @@ videoControls.addEventListener("mouseenter",showControls);
 videoControls.addEventListener("mouseleave",hideControls);
 player.addEventListener("mouseenter",showControls);
 player.addEventListener("mouseleave",hideControls);
-};
+
+}*/

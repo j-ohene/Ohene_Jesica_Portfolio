@@ -22,7 +22,7 @@ button {
     width: 290px;
     background-color:#ffffff;
     font-size: 14pt;
-    height: 150px;
+    height: 120px;
 }
 
 
@@ -46,32 +46,31 @@ button {
 
 
 #contact-form{
-	padding-left: 30px;
+	padding-left: 60px;
 	padding-right: 30px;
 	padding-top: 20px;
-	background-color: #9898FC;
+	background-color: #744B60;
 	padding-bottom: 20px;
 	margin-bottom: 40px;
-    border-radius: 15px;
-    align-items: center;
+    border-radius: 10px;
+    align-items: left;
 }
 
 #contact-form input:not([type="checkbox"]) {
 	display: block;
 	border: solid 1px #D5D5D5;
-	padding: 20px;
-	width: 90%;
+	padding: 10px;
+	width: 80%;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	border-radius: 15px;
 }
 
 #contact-form label {
-	color: #434242;
-    text-align: left;
+	color: #000000;
+    margin-left:0px;
   
 }
-
 #contact-form h3 {
 	margin-top: 20px;
 	font-weight: 600;
@@ -85,6 +84,7 @@ button {
 	color: #888888;
 	line-height: 34px;
 	max-width: 430px;
+	
 }
 
 #checkbox {
@@ -98,17 +98,20 @@ button {
 
 
 #contact-form #submit {
-	background-color: #342fc7;
+	background-color: #503756;
 	color: #fff;
 	transition: ease .2s all;
-	max-width: 100px;
-	height: 40px; 
-	font-size: 12px;
-	border-radius: 50px;
+	max-width: 90px;
+	height: 50px; 
+	font-size: 16px;
+	border-radius: 20px;
+	border-color: transparent;
+	padding-top: 10px;
+
 }
 
-#submit:hover {
-	background-color: #97be80;
+#contact-form #submit:hover {
+	background-color: rgba(190, 175, 255, 0.509);
 }
 
 #feedback {
@@ -127,7 +130,7 @@ button {
 
 	#contact-form {
 		width: 500px;
-		margin-left: auto;
+		margin-left: 300px;
 		margin-right: 20px;
 		border-radius: 10px;
 		margin-top: 20px;
@@ -142,13 +145,19 @@ button {
 
 
     #contact-form {
-		width: 500px;
+		width: 800px;
 		border-radius: 15px;
 		margin-top: 20px;
 		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
       font-size: 12pt;
-      align-items: center;
+      align-items: left;
+	  margin-left:50px;
+	  padding-left: 20px;
 
 	}
-
+	#contact-form label {
+		color: #000000;
+		margin-left:0px;
+	  
+	}
 }

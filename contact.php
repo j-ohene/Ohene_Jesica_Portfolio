@@ -9,6 +9,12 @@
 
     $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
     $errors = array();
+    
+    $fname = isset($_POST['fname']) ? mysqli_real_escape_string($connection, $_POST['fname']) : '';
+$lname = isset($_POST['lname']) ? mysqli_real_escape_string($connection, $_POST['lname']) : '';
+$email = isset($_POST['email']) ? mysqli_real_escape_string($connection, $_POST['email']) : '';
+$message = isset($_POST['message']) ? mysqli_real_escape_string($connection, $_POST['message']) : '';
+
 
     $lname = mysqli_real_escape_string($connection, $_POST['lname']);
     if ($lname == NULL) {

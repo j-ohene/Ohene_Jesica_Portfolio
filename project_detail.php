@@ -93,7 +93,7 @@ $stmt = null;
             <h1 class="case-study-title"> <?php echo $row['title']; ?></h1>
         </div>
 
-        <div class="collaborators col-start-3 col-span-2 m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-6  xl-col-start-7 xl-col-span-6">
+        <div class="collaborators col-start-3 col-span-2  m-col-span-full l-col-span-full  xl-col-span-full">
         <p>Collaborators:</p>
             <p><?php echo $row['date_created']; ?></p>
             <p><?php echo $row['collaborators']; ?></p>
@@ -105,20 +105,23 @@ $stmt = null;
                 }                
                 ?>     
             </section>
+
         </div>
     </section>
 </section>
-    <script src="js/main.js"></script>
+   
   
 
     <footer class="grid-con">
         <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-        <ul class="footer-links">
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+        <footer class="grid-con">
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/jesica-ohene-3770b6243/">Linkedin</a></li>
+                <li><a href="https://github.com/j-ohene">GitHub</a></li>
+            </ul>
+            </div>
+    </footer>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
         <script src="js/main.js"></script>

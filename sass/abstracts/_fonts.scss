@@ -2,12 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight:500;
-    font-size: 30pt;
+     font-family: 'Dancing Script';
+    font-weight:700;
+    font-size: 32pt;
     padding-top:20px;
     padding-left:20px;
+    color:rgb(12, 12, 50)
 }
 
 @font-face{
@@ -15,4 +15,6 @@ h1{
     src: url('/fonts/Roboto-Regular.ttf')  format('ttf');
     
 }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
 

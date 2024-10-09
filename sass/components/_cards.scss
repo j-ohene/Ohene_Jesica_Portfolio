@@ -27,6 +27,7 @@
 }
 
 /* Adjust text styles */
+
 .carousel-title {
   font-size: 36px;
   margin-bottom: 5px;
@@ -55,11 +56,11 @@
 
 .front-end .carousel-button {
   background-color: white;
-  color: #efae82;
+  color: #faceb0;
 }
 
 .front-end{
-  background-color: #efae82;
+  background-color: #faceb0;
 }
 .front-end img{
   display: block;
@@ -67,12 +68,12 @@
 }
 .motion .carousel-button {
   background-color:white;
-  color: #d27f94;
+  color: #c2bfea;
 }
 
 
 .motion{
-  background-color: #f392c9;
+  background-color: #c2bfea;
 }
 .motion img{
   padding-top:20px;
@@ -80,11 +81,11 @@
 }
 .graphic .carousel-button {
   background-color:white;
-  color: #9ce0a3;
+  color: #617864;
 }
 
 .graphic{
-  background-color: #9ce0a3;
+  background-color: #b6ddba;
 }
 
 
@@ -98,43 +99,3 @@
 }
 
 
-.carousel:hover .carousel-item:not(:hover) {
-  transform: scale(0.8);
-}
-
-
-  .mobile .carousel-content h2{
-    font-size: 16pt;
-  }
- .mobile .carousel-content h3{
-    font-size:12pt;
-  }
-  .mobile .carousel-content p {
-    font-size: 8pt;
-
-   }
-   .mobile .carousel-content a {
-    font-size: 10pt;
-
-
-   }
-.mobile .carousel-button{
-  margin-left:100px;
-  margin-top:20px;
-}
-.mobile .carousel-content img{
-  max-width: 300px;
-  display: block;
-}
- .mobile .carousel-item {
-border-radius: 0;
-padding-top: 0;
-
- }
- .mobile .carousel-content{
-margin-top:0;
-
- }
- .mobile .carousel-item .graphic img{
-  max-width: 300px;
- }

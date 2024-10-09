@@ -3,30 +3,59 @@
 
 
 .about p{
-    color: #b5c2d0;
-    font-size: 12pt;
+    color: #1e191e;
+    font-size: 14pt;
     text-align: left;
 
 }
 
 .title h1{
-    color:#b5c2d0;
+    color:#1e191e;
     text-align: center;
 }
-.about-me li {
-    color: #b5c2d0;
+
+.about-me{
+    margin: 20px;
+}
+.about-me li img {
+    color:#1e191e;
     font-size: 12pt;
     text-align: left;
+    max-width:40px;
 
 }
 .about-me h2{
-color: #b5c2d0;
+color: #1e191e;
 text-align: left;
 }
 .about-me h3{
-    color: #b5c2d0;
+    color: #1e191e;
     text-align: left;
+ 
 }
-#portrait img {
-    max-width:300px;
+#portrait {
+    max-width:350px;
+    margin-left: 120px;
 }
+.resume-button {
+    display: inline-block;
+    background-color: #BCA5A7;
+    color: #fff; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left:200px;
+    margin-top:35px;
+  }
+  
+  .resume-button:hover {
+    background-color:#744B60; /* Darker pink color on hover */
+  }
+  .gallery #photo-group{
+    display: inline-block;
+  }
+  .thumb-text {
+    text-decoration: none;
+  }
